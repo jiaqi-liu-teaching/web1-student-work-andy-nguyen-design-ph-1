@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Montserrat Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Andy Nguyen">
+        <meta name="description" content="Music, tour dates, and information about pH-1">
+        <title>pH - 1</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 999px)" href="styles/tablet.css"> 
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/mobile.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/ph1-logo.svg" alt="logo" >
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><img src="images/ph1-logo.svg" alt="logo" ></a>
+            <nav>
+                <a href="music.html">MUSIC</a>
+                <a href="tour.html">TOUR</a>
+                <a href="about.html">ABOUT</a>
+            </nav>
+            <button class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="mobile-nav">
+                <a href="music.html">MUSIC</a>
+                <a href="tour.html">TOUR</a>
+                <a href="about.html">ABOUT</a>
+            </nav>
+        </header>
+        <main>
+        
+        <!-- Section 1 -->
+            <img src="images/optimized/biography-header.webp" alt="Biography Header" class="biography-image" / fetchpriority="high" decoding="async">
+            <h1 class="biography-text-header">BIOGRAPHY</h1>
+
+        <!-- Section 2 -->
+            <div class="about-section scroll-animate">
+                <h2>ABOUT</h2>
+                <div class="about-text-columns">
+                    <p>Korean-American artist pH-1 (Park Jun-won) is a leading voice in K-Hip Hop and R&B, renowned for his seamless blend of intricate, melodic rap flows in both English and Korean. Raised in Long Island, NY, his bi-cultural identity defines his sophisticated sound, which stands out for its introspective lyrics, emotional honesty, and positive messaging. </p>
+                    <p>After moving back to Korea, he gained critical acclaim through his work with the H1GHR MUSIC label and exposure on shows like Show Me the Money. With a signature aesthetic marked by the Orange motif, pH-1 continues to expand his global reach through successful albums like But For Now Leave Me Alone and extensive world tours, cementing his status as a versatile and influential figure in contemporary music.</p>
+                </div>
+                <img src="images/about.jpg" alt="About pH-1" class="about-section-image" / loading="lazy" decoding="async">
+            </div>
+
+        <!-- Section 3 -->
+            <div class="highlights-section scroll-animate">
+                <img src="images/optimized/ph1-highlight.webp" alt="pH-1 Highlights" class="highlights-section-image" / loading="lazy" decoding="async">
+                <div class="highlights-text-content">
+                    <h2>HIGHLIGHTS</h2>
+
+                    <p><strong>Established Pedigree:</strong> A foundational artist in the K-Hip Hop scene, initially rising to prominence as a key member of the H1GHR MUSIC label.</p>
+
+                    <p><strong>Mass Recognition:</strong> Gained widespread national recognition and solidified his status following his participation in Mnet's reality show, Show Me the Money. </p>
+
+                    <p><strong>Critical Discography:</strong> Successfully released multiple acclaimed albums, including HALO, X, and But For Now Leave Me Alone, demonstrating consistent artistic growth and chart performance.</p>
+
+                    <p><strong>Global Reach:</strong> Regularly completes successful World Tours across North America and Asia, proving his strong international following and drawing power.</p>
+
+                    <p><strong>Brand Extension:</strong> Expanded his creative output by launching and managing his own fashion brand, EGO FETCH, reflecting his unique, clean aesthetic.</p>
+                </div>
+            </div>
+        
+        <!-- Section 4 -->
+            <div class="contact-section scroll-animate">
+                <button id="openContactModal" class="contact-button">Contact</button>
+            </div>
+
+            <!-- Contact Modal -->
+            <div id="contactModal" class="modal">
+                <div class="modal-content contact-form-container">
+                    <span class="close" id="closeContactModal">&times;</span>
+                    <h2>Contact Us</h2>
+                    <form id="contactForm">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-icons">
+                        <a href="https://www.instagram.com/ph1boyyy/?hl=en" target="_blank"><img src="images/optimized/instagram-icon.webp" alt="Instagram Icon" class="iconstyle"/ loading="lazy" decoding="async"></a>
+                        <a href="https://youtube.com/@ph1official?si=WSlBcVjXDLRavZ1H" target="_blank"><img src="images/optimized/youtube-icon.webp" alt="YouTube Icon" class="iconstyle" / loading="lazy" decoding="async"></a>
+                        <a href="https://x.com/ph1boyyy?lang=en " target="_blank"><img src="images/optimized/x-icon.webp" alt="Twitter Icon" class="iconstyle"/ loading="lazy" decoding="async"></a>
+                        <a href="https://www.tiktok.com/@boyyyph1?lang=en" target="_blank"><img src="images/optimized/tiktok-icon.webp" alt="TikTok Icon" class="iconstyle"/ loading="lazy" decoding="async"></a>
+                        <a href="https://open.spotify.com/artist/2u7CP5T30c8ctenzXgEV1W" target="_blank"><img src="images/optimized/spotify-icon.webp" alt="Spotify Icon" class="iconstyle" / loading="lazy" decoding="async"></a>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="images/ph1-logo.svg" alt="logo" />
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-links">
+                        <a href="https://www.cjenm.com/en/privacy-policy/1-7/" target="_blank"><h1>Contact</h1></a>
+                        <a href="https://www.cjenm.com/en/privacy-policy/1-7/" target="_blank"><h1>Privacy Policy</h1></a>
+                        <a href="https://www.cjenm.com/en/legal-notice-and-disclaimer/" target="_blank"> <h1>Terms and Conditions</h1></a>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>COPYRIGHT © 2025 pH-1 / ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Hamburger Menu Toggle
+            const hamburger = document.querySelector('.hamburger-menu');
+            const mobileNav = document.querySelector('.mobile-nav');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('is-active');
+                mobileNav.classList.toggle('is-active');
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const contactModal = document.getElementById('contactModal');
+                const openBtn = document.getElementById('openContactModal');
+                const closeBtn = document.getElementById('closeContactModal');
+
+                // Function to open the modal
+                openBtn.onclick = function() {
+                    contactModal.style.display = "block";
+                }
+
+                // Function to close the modal
+                closeBtn.onclick = function() {
+                    contactModal.style.display = "none";
+                }
+
+                // Close modal if user clicks outside of the content
+                window.onclick = function(event) {
+                    if (event.target == contactModal) {
+                        contactModal.style.display = "none";
+                    }
+                }
+
+                // Scroll animation
+                const animatedElements = document.querySelectorAll('.scroll-animate');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                animatedElements.forEach(el => observer.observe(el));
+            });
+        </script>
+    </body>
+</html>

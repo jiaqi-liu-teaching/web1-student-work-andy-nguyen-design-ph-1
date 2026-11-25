@@ -1,0 +1,1249 @@
+/* Open Sans Font - Local Files */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-variablefont.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FF6600;
+    animation: fadeInPage 0.8s ease-in-out;
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FF6600;
+}
+
+
+/* Header Styling */
+header {
+    --header-height: 108px; /* Approximate height: 1.5rem padding + 60px logo + 1.5rem padding */
+    background-color: #000000;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    border-bottom: none;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header a img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+header a img:hover {
+    transform: scale(1.05);
+}
+
+header nav {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+header nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FF6600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.59rem;
+    transition: font-size 0.3s ease;
+    border-bottom: none;
+    padding-bottom: 0.25rem;
+}
+
+header nav a:hover {
+    color: #FF6600;
+    font-size: 1.5rem;
+}
+
+/* Hide hamburger menu on desktop and tablet */
+.hamburger-menu,
+.mobile-nav {
+    display: none;
+}
+
+
+
+
+/* Header Font Stylings */
+#homepagefontsizeh2 {
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #FF6600;
+    padding-left: clamp(2rem, 5vw, 4rem);
+    margin-bottom: clamp(-2rem, -1vw, -1rem);
+}
+
+#whathave {
+    font-size: 10vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #FF6600;
+    margin-top: -10vw;
+}
+
+#wedone {
+    font-size: 15vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #FF6600;
+    margin-top: -15vw;
+}
+
+/* Image Stylings */
+.what-have-we-done-videomain1 {
+    width: 92%;
+    height: auto;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.homepage-tour {
+    width: 100%;
+    height: auto;
+}
+
+.music-hero {
+    width: 100%;
+    height: auto;
+}
+
+.upcoming-tour-hero {
+    width: 100%;
+    height: auto;
+}
+
+.tour-horitiontal-image {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+/* Homepage Upcoming Tour Section */
+.tour-dates-type-style {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #FF6600;
+}
+
+.tour-text-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 18rem;
+    color: #FF6600;
+    margin-top: -14rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.tour-dates-body-style {
+    font-family: opensans, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #FF6600;
+}
+
+
+
+.upcoming-tour-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding-left: clamp(1rem, 5vw, 4rem);
+    padding-right: clamp(1rem, 5vw, 4rem);
+}
+
+.tour-dates {
+    flex: 1;
+    padding-left: 2rems;
+}
+
+.tour-dates p {
+    margin: 0.5rem 0;
+}
+
+.tour-image {
+    flex: 1;
+    text-align: right;
+}
+
+.tour-date-entry {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tour-details {
+    flex-grow: 1;
+}
+
+.tour-date-entry:not(:last-child) {
+    border-bottom: 2px solid #FF6600;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+
+.tour-date-entry:first-child {
+    border-top: 2px solid #FF6600;
+    padding-top: 3rem;
+}
+
+.date-box {
+    border: 0.2rem solid #FF6600;
+    color: #FF6600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    text-align: center;
+}
+
+.date-box .month {
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.tour-arrow-link {
+    color: #FF6600;
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    margin-right: 10%;
+    margin-left: auto;
+}
+
+.tour-arrow-link:hover {
+    transform: scale(1.2);
+}
+
+.get-tickets-btn {
+    background-color: #FF6600;
+    color: #000000;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.get-tickets-btn:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+
+.date-box .day {
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.ph1-type {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;   
+    font-size: clamp(12rem, 25vw, 30rem);
+    color: #FF6600;
+    margin-top: -10vw;
+    margin-bottom: 5vw;
+}
+
+
+
+.video-switcher {
+    position: relative;
+    height: calc(100vh - 108px); /* Viewport height minus header height */
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.video-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.video-container.is-active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#nextVideoBtn {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+    background-color: #FF6600;
+    color: #000000;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.video-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #000000;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 2px solid #FF6600;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: popupSlideIn 0.3s ease;
+}
+
+@keyframes popupSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes popupFadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.video-popup.closing {
+    animation: fadeOutOverlay 0.3s ease forwards;
+}
+
+@keyframes fadeOutOverlay {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.popup-content.closing {
+    animation: popupFadeOut 0.3s ease forwards;
+}
+
+.close-popup {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FF6600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-popup:hover {
+    color: #FFFFFF;
+}
+
+.popup-content h3 {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.album-popup .popup-link.youtube-music-link img {
+    filter: brightness(1) saturate(1);
+}
+
+.album-popup .popup-link.apple-music-link img {
+    filter: brightness(1) saturate(1);
+}
+
+.album-popup .popup-link.apple-music-link img {
+    filter: brightness(1) saturate(1);
+}
+
+.popup-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    margin: 0 1rem 1rem 1rem;
+    background-color: #000000;
+    border: 2px solid #FF6600;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #FF6600;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.popup-link:hover {
+    background-color: #FF6600;
+    color: #000000;
+    transform: scale(1.08);
+}
+
+.album-popup .popup-content.closing {
+    animation: popupFadeOut 0.3s ease forwards;
+}
+ 
+.popup-link img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+}
+
+.popup-link:hover img {
+    filter: none;
+}
+
+/* Video Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: 5% auto;
+    padding: 2rem;
+    border: 2px solid #FF6600;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 102, 0, 0.2);
+}
+
+.modal-content h2 {
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.close {
+    color: #FF6600;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #FFFFFF;
+}
+
+.modal-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.modal-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background-color: #000000;
+    border: 1px solid #FF6600;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #FF6600;
+    transition: all 0.3s ease;
+}
+
+
+.modal-link:hover {
+    background-color: #FF6600;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+.modal-link img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%);
+}
+
+.modal-link:hover img {
+    filter: brightness(0) saturate(100%) invert(1);
+}
+
+.modal-link p {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* PH1 Footer Styling */
+footer {
+    background-color: #000000;
+    padding: clamp(1rem, 3vw, 2rem);
+    text-align: center;
+    border: 0.1rem solid #FF6600; 
+    margin-top: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.footer-icons {
+    display: flex;
+    gap: clamp(1rem, 3vw, 2rem);
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-icons a {
+    text-decoration: none;
+}
+
+.footer-icons img {
+    height: clamp(1.5rem, 4vw, 2.5rem);
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.5) translateY(-5px);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-align: left;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+
+.footer-links h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: bold;
+    color: #FF6600;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover h1 {
+    color: #FFFFFF;
+}
+
+.footer-logo img {
+    height: clamp(3rem, 7vw, 5rem);
+}
+
+.footer-copyright p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+    color: #FF6600;
+    margin: 0;
+}
+
+/* Albums Music Section */
+
+.music-text-header {
+    margin-top: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(4rem, 18vw, 8rem);
+    color: #FF6600;
+    margin-bottom: clamp(-2rem, -7vw, -5rem);
+}
+
+/* Album Cover Hover Effect */
+.album-cover-container {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    flex: 1;
+}
+
+.album-cover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #FF6600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 10%; 
+    box-sizing: border-box; 
+}
+
+.album-cover-container:hover .album-cover {
+    opacity: 0.3; 
+}
+.album-cover-container:hover .album-cover-overlay {
+    opacity: 1;
+}
+
+.album-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    color: #FF6600;
+    padding: 0 2rem;
+}
+
+.album-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem clamp(1rem, 5vw, 4rem);
+}
+
+.album-container {
+    flex: 1;
+    min-width: 0; 
+}
+
+.album-cover {
+    width: 100%; 
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+
+
+
+.track-list {
+    list-style-type: decimal;
+    color: #FF6600;
+    padding-left: 2rem;
+    margin: 2rem 0;
+}
+
+.track-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 102, 0, 0.3);
+    font-size: 1.2rem;
+}
+
+.track-list li:last-child {
+    border-bottom: none;
+}
+
+.track-name {
+    padding-left: 1.5rem;
+}
+
+.track-duration {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Align icons in one row */
+.album-popup .popup-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    align-items: center;
+    gap: 10px; 
+    width: 100%; 
+    text-align: center; 
+}
+
+.album-popup .popup-content h3 {
+    grid-column: 1 / -1; /* Span all columns */
+    text-align: center;
+}
+
+
+.album-popup .popup-content > a {
+    margin: 0.5rem;
+}
+
+
+
+
+/* Album Popup Styling */
+.album-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.album-popup .popup-content {
+    background-color: #000000;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 2px solid #FF6600;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: popupSlideIn 0.3s ease;
+}
+
+.album-popup .close-popup {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FF6600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.album-popup .close-popup:hover {
+    color: #FFFFFF;
+}
+
+.album-popup h3 {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.album-popup .popup-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    margin: 0 1rem 1rem 1rem;
+    background-color: #000000;
+    border: 2px solid #FF6600;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #FF6600;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Gallery */
+.ep-gallery {
+    display: contents;
+}
+
+.digital-singles-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 4rem; 
+    margin: 20px; 
+}
+
+.digital-singles-gallery img {
+    width: 100%; 
+    height: auto;
+}
+
+.digital-singles-gallery img:hover,
+.ep-gallery img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.ep-gallery {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 6rem; 
+    margin: 20px; 
+}
+
+.ep-gallery img {
+    width: 100%; 
+    height: auto; 
+}
+
+.playlist-spacer {
+    margin-top: 5rem;
+}
+
+.playlist-container {
+    padding: 0 clamp(1rem, 5vw, 4rem);
+    margin-top: 5rem;
+}
+
+.playlist-header {
+    font-size: clamp(3rem, 10vw, 6rem); 
+    margin-bottom: 2rem; 
+}
+
+.tour-main-content {
+    display: flex;
+    gap: 5%;
+    margin-top: 4%;
+}
+
+.tour-portrait-container {
+    flex: 0 0 35%; 
+    overflow: hidden; 
+}
+
+.tour-portrait-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+/* Mailing List Section */
+.mailing-list-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: url('../images/optimized/arena-mailing.webp') no-repeat center center;
+    background-size: cover;
+    padding: 10rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.mailing-list-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.mailing-list-container form {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.mailing-list-section input,
+.mailing-list-section select,
+.mailing-list-section button {
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.mailing-list-container button {
+    background-color: #FF6600;
+    color: #000000;
+    border-color: #FF6600;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.mailing-list-container input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.8; 
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .mailing-list-container form {
+        flex-direction: column;
+        align-items: stretch; 
+        width: 80%;
+    }
+
+    .mailing-list-container h2 {
+        font-size: 2rem;
+    }
+}
+
+.past-tour-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(8rem, 20vw, 18rem);
+    color: #FF6600;
+    margin-top: clamp(5rem, 11vw, 10rem);
+    margin-bottom: clamp(-3rem, -6vw, -5rem);
+}
+
+.past-tour-image {
+    width: 100%;
+    height: auto;
+}
+
+
+/* About Section */
+.biography-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: -5rem;
+}
+
+.biography-text-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 13vw;
+    color: #FF6600;
+    margin-top: -9vw;
+    margin-left: 7vw;
+    align-content: center;
+}
+
+/* About Section 2 Styling */
+.about-section {
+    padding-top: 1rem; 
+    padding-bottom: 2rem; 
+    padding-left: clamp(1rem, 5vw, 4rem);
+    padding-right: clamp(1rem, 5vw, 4rem);
+}
+
+.about-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: #FF6600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-text-columns {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+    max-width: 120ch;
+    margin-inline: auto;
+}
+
+.about-text-columns p {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-section-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Highlights Section Styling */
+.highlights-section {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center; 
+}
+
+.highlights-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: #FF6600;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.highlights-section-image {
+    flex: 1;
+    width: 50%;
+    height: auto;
+}
+
+.highlights-section p {
+    margin-bottom: 1.5rem; 
+}
+
+.highlights-text-content {
+    flex: 1;
+    min-width: 0; 
+}
+
+/* Contact Section 4 Styling */
+.contact-section {
+    position: relative;
+    background-image: url('../images/optimized/ph1-contact.webp');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.contact-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #FFFFFF;
+    background-color: #FF6600;
+    border: none;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/* Contact Form Styles */
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #FF6600;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form-container button {
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF6600;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Scroll Animation */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animate.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.popup-link img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+}
+
+.modal-link:hover img {
+    filter: brightness(0) saturate(100%) invert(1);
+}
+
+
+/* Go Up Button */
+#goUpBtn {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  border: 2px solid #FF6600;
+  outline: none;
+  background-color: #000000;
+  color: #FF6600;
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+}
+
+#goUpBtn.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#goUpBtn:hover {
+  background-color: #FF6600;
+  color: #000000;
+}
+
+/* Keep the desktop header and each page's opening banner within one viewport. */
+@media screen and (min-width: 1000px) {
+    body {
+        margin: 0;
+    }
+
+    header {
+        height: 108px;
+        box-sizing: border-box;
+    }
+
+    .video-switcher,
+    .upcoming-tour-hero,
+    .biography-image {
+        height: calc(100vh - 108px);
+    }
+
+    .upcoming-tour-hero,
+    .biography-image {
+        display: block;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Montserrat Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Andy Nguyen">
+        <meta name="description" content="Music, tour dates, and information about pH-1">
+        <title>pH - 1</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 999px)" href="styles/tablet.css"> 
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/mobile.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/ph1-logo.svg" alt="logo" >
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><img src="images/ph1-logo.svg" alt="logo" ></a>
+            <nav>
+                <a href="music.html">MUSIC</a>
+                <a href="tour.html">TOUR</a>
+                <a href="about.html">ABOUT</a>
+            </nav>
+            <button class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="mobile-nav">
+                <a href="music.html">MUSIC</a>
+                <a href="tour.html">TOUR</a>
+                <a href="about.html">ABOUT</a>
+            </nav>
+        </header>
+
+        <main> 
+            <!-- Section 1 -->
+            <div class="video-switcher">
+                <div class="video-container is-active" data-youtube="https://www.youtube.com/watch?v=JE4gS6eWI70" data-spotify="https://open.spotify.com/track/2S2OaFvA5Ea2n2aed3F2g4?si=1f845d0130544c7b">
+                    <video width="100%" height="100%" preload="auto" autoplay muted loop playsinline>
+                        <source src="videos/ph1-rosetta-optimized.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-container" data-youtube="https://www.youtube.com/watch?v=5i0_gDdpLpQ" data-spotify="https://open.spotify.com/track/45341o3I2Mv1z2hY23z1s5?si=03a08f51a7e246a4">
+                    <video width="100%" height="100%" preload="none" muted loop playsinline>
+                        <source data-src="videos/like-me.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-container" data-youtube="https://www.youtube.com/watch?v=6kvdVqG2lXP" data-spotify="https://open.spotify.com/track/6kvdVqG2lXPvBqwqh6aoKV?si=fa58e025e98147d6">
+                    <video width="100%" height="100%" preload="none" muted loop playsinline>
+                        <source data-src="videos/mr-bad.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <button id="nextVideoBtn">Next Video</button>
+            </div>
+            
+            <!-- Section 2 -->
+            <h1 class="music-text-header scroll-animate">ALBUMS</h1>
+            
+            <h2 class="album-title scroll-animate">WHAT HAVE WE DONE</h2>
+             <div class="album-layout">
+                <div class="album-container">
+                    <ol class="track-list">
+                        <li><span class="track-name">WHAT HAVE WE DONE</span><span class="track-duration">2:02</span></li>
+                        <li><span class="track-name">PARTY PPL (feat. Min Ji-woon)</span><span class="track-duration">2:45</span></li>
+                        <li><span class="track-name">KEEP IT ON THE LOW (feat. lIlBOI)</span><span class="track-duration">2:25</span></li>
+                        <li><span class="track-name">CRASHINNN OUTTT!!!</span><span class="track-duration">1:58</span></li>
+                        <li><span class="track-name">ERYKAH BADU (feat. CAMO)</span><span class="track-duration">2:44</span></li>
+                        <li><span class="track-name">GOSHA (feat. Karencici)</span><span class="track-duration">2:37</span></li>
+                        <li><span class="track-name">DRUGGED2THRILLS</span><span class="track-duration">2:25</span></li>
+                        <li><span class="track-name">54321 (feat. HAEWON of NMIXX)</span><span class="track-duration">3:05</span></li>
+                        <li><span class="track-name">EASY (feat. THAMA)</span><span class="track-duration">3:54</span></li>
+                        <li><span class="track-name">SUMMER FEVER</span><span class="track-duration">3:15</span></li>
+                        <li><span class="track-name">COVERED IN RAIN</span><span class="track-duration">2:35</span></li>
+                        <li><span class="track-name">HAD I KNOWN (도망쳐)</span><span class="track-duration">2:43</span></li>
+                        <li><span class="track-name">SOAK IN BLUE</span><span class="track-duration">3:17</span></li>
+                    </ol>
+
+                </div>
+                <div class="album-cover-container" id="albumCoverContainer">
+                    <img src="images/optimized/what-have-we-done.webp" alt="What Have We Done Album Cover" class="album-cover" id="albumCover"/ loading="lazy" decoding="async">
+                    <div class="album-cover-overlay">WHAT HAVE WE DONE</div>
+                </div>
+            </div>
+            
+             <h2 class="album-title scroll-animate">BUT FOR NOW LEAVE ME ALONE</h2>
+             <div class="album-layout">
+                 <div class="album-container">
+                     <ol class="track-list">
+                         <li><span class="track-name">ZOMBIES</span><span class="track-duration">3:04</span></li>
+                         <li><span class="track-name">TGIF</span><span class="track-duration">3:16</span></li>
+                         <li><span class="track-name">Yuppie TingBlase</span><span class="track-duration">3:00</span></li>
+                         <li><span class="track-name">Tipsy</span><span class="track-duration">3:20</span></li>
+                         <li><span class="track-name">Mr. BadWoo Won-jae (Woo)</span><span class="track-duration">3:05</span></li>
+                         <li><span class="track-name">Juliette!UMI</span><span class="track-duration">3:06</span></li>
+                         <li><span class="track-name">Run Away</span><span class="track-duration">2:57</span></li>
+                         <li><span class="track-name">Dead Girl</span><span class="track-duration">3:22</span></li>
+                         <li><span class="track-name">Shrink Told MeMokyo</span><span class="track-duration">2:29</span></li>
+                         <li><span class="track-name">IssuesPaloalto</span><span class="track-duration">3:23</span></li>
+                         <li><span class="track-name">Break the Glass</span><span class="track-duration">3:31</span></li>
+                         <li><span class="track-name">Final Bout (마지막 싸움)Los</span><span class="track-duration">2:51</span></li>
+                         <li><span class="track-name">Bve (배)</span><span class="track-duration">3:28</span></li>
+                     </ol>
+                 </div>
+                 <div class="album-cover-container" id="albumCoverContainer2">
+                     <img src="images/but-for-now-leave-me-alone.jpg" alt="But For Now Leave Me Alone Album Cover" class="album-cover" id="albumCover2"/ loading="lazy" decoding="async">
+                     <div class="album-cover-overlay">BUT FOR NOW LEAVE ME ALONE</div>
+                 </div>
+            </div>
+            
+        
+             
+              
+            <h2 class="scroll-animate album-title">HALO</h2>
+            <div class="album-layout">
+                <div class="album-container">
+                    <ol class="track-list">
+                        <li><span class="track-name">ALL IN</span><span class="track-duration">3:28</span></li>
+                        <li><span class="track-name">Nerdy LovePaloalto</span><span class="track-duration">3:42</span></li>
+                        <li><span class="track-name">Tixtoe</span><span class="track-duration">3:00</span></li>
+                        <li><span class="track-name">MalibuThe Quiett, Mokyo</span><span class="track-duration">3:18</span></li>
+                        <li><span class="track-name">Good Daykid milli, Loopy, Paloalto</span><span class="track-duration">3:08</span></li>
+                        <li><span class="track-name">Alright</span><span class="track-duration">3:19</span></li>
+                        <li><span class="track-name">Latest</span><span class="track-duration">3:00</span></li>
+                        <li><span class="track-name">Love or Hate</span><span class="track-duration">2:56</span></li>
+                        <li><span class="track-name">Lights Up</span><span class="track-duration">3:05</span></li>
+                        <li><span class="track-name">Rain DanceRobert de Boron</span><span class="track-duration">2:59</span></li>
+                        <li><span class="track-name">Like I Do</span><span class="track-duration">2:48</span></li>
+                        <li><span class="track-name">Comfy</span><span class="track-duration">2:58</span></li>
+                        <li><span class="track-name">You Don't Know My Name</span><span class="track-duration">3:16</span></li>
+                    </ol>
+                </div>
+                <div class="album-cover-container" id="albumCoverContainer3">
+                    <img src="images/optimized/halo.webp" alt="halo Album Cover" class="album-cover" id="albumCover3"/ loading="lazy" decoding="async">
+                    <div class="album-cover-overlay">HALO</div>
+                </div>
+            </div>
+            
+             
+
+            <!-- Section 3 -->
+          <h1 class="music-text-header scroll-animate">DIGITAL SINGLES</h1>
+             <div class="digital-singles-gallery scroll-animate">
+                <a href="https://open.spotify.com/track/12zn8gSltqNij6zmx9b165?si=94d6499461344993" target="_blank"><img src="images/optimized/gosha.webp" alt="GOSHA Single Cover" / loading="lazy" decoding="async"></a>
+                <a href="https://www.youtube.com/watch?v=l_1wi8b1Sk0&list=RDl_1wi8b1Sk0&start_radio=1" target="_blank"><img src="images/optimized/baby-steps.webp" alt="baby-steps" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/album/7b9QwpzU17mMaI2xQPsTDU?si=MJ6g0B4sTc20bhP7ZCzHkQ" target="_blank"><img src="images/optimized/hands.webp" alt="hands" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/track/1P6QKJ1Vyskavy98wtV7W7?si=8354b120692a43af" target="_blank"><img src="images/optimized/flat-coke.webp" alt="flat-coke" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/track/2lbL9ybEcabfosjaM7tYOr?si=da162b4250774dd1" target="_blank"><img src="images/optimized/used-to-be.webp" alt="used-to-be" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/album/6K8UR09gTck9A0GaOs1LJf?si=GGz4m8BdTCmtaA2u-1PJJg" target="_blank"><img src="images/optimized/swf2.webp" alt="swf2" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/track/6kvdVqG2lXPvBqwqh6aoKV?si=fa58e025e98147d6" target="_blank"><img src="images/optimized/mr-bad.webp" alt="mr-bad" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/track/68W9Rt5yAcalwteykLJ82a?si=8d49e18792784b84" target="_blank"><img src="images/optimized/lately.webp" alt="lately" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/track/6VYY26Wws3jIS1DdqeOsXZ?si=ad2f725a7f774483" target="_blank"><img src="images/optimized/365.webp" alt="365" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/track/6KQelx3FbD4OCCKhHrblhU?si=46c3c3a971d94d63" target="_blank"><img src="images/optimized/antisocial.webp" alt="antisocial" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/track/2TfsNTyC4uuamXBZJnU0ga?si=407438c837e1433a" target="_blank"><img src="images/optimized/nerdy-love.webp" alt="nerdy-love" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/album/4f9lXPlDBbrXrZ0sX8CXns?si=YBPMsA4TRgCUV3Orqf5qEw" target="_blank"><img src="images/optimized/summer-episodes.webp" alt="summer-episodes" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/album/1pvOmrT5CgSnxl7oYEe1yG?si=OlVeOpf1R9SGJBqXgNDDHw" target="_blank"><img src="images/optimized/staying.webp" alt="staying" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/album/7kXbkAjgRyksxZ4UmoEeQt?si=c7YbgSoQQN-6-f9YXMoklA" target="_blank"><img src="images/optimized/loves.webp" alt="loves" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/album/7rIzTIf076lQYKUgK9gCoz?si=2po5WMkGTc6_CO4ahyT8CQ" target="_blank"><img src="images/optimized/harry.webp" alt="harry" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/album/3oc0tOh9XqNQtWGwDmcZfk?si=Xy9yDhvXTpKXPpm3IYMzvw" target="_blank"><img src="images/optimized/gatsby.webp" alt="gatsby" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/track/7Coi8O3oswmsoXkfYtT7GE?si=6b1870ddc95947cc" target="_blank"><img src="images/optimized/perfect.webp" alt="perfect" / loading="lazy" decoding="async"></a>
+                <a href="https://open.spotify.com/track/6Cfvt0WMuzyX7nkteVY47V?si=d0ba21cc83ba47c2" target="_blank"><img src="images/optimized/wavy.webp" alt="wavy" / loading="lazy" decoding="async"></a>
+            </div>
+
+
+            <!-- Section 4 -->  
+
+            <h1 class="music-text-header scroll-animate">EP's</h1>
+           <div class="ep-gallery scroll-animate">
+            <a href="https://open.spotify.com/album/2PPWpduO1cqj48JrfvicJV?si=4h-Kz3zoS6KLFL-USPTLUA" target="_blank"><img src="images/pop-off.webp" alt="pop-off" class="digital-singles-gallery-img" / loading="lazy" decoding="async"></a>
+            <a href="https://open.spotify.com/album/7j6hc4TSDleMVAtN3nseE6?si=Q-MUt5hfS1G4zKBosJaSCg" target="_blank"><img src="images/optimized/the-island-kid.webp" alt="the-island-kid" class="digital-singles-gallery-img" / loading="lazy" decoding="async"></a>
+            </div>
+
+            <!-- Section 5 -->
+            <h1 class="music-text-header playlist-header scroll-animate">PLAYLISTS</h1>
+
+            <div class="playlist-container">
+                <iframe class="scroll-animate" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1qgbZe?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                <div class = "playlist-spacer">
+                    <iframe class="scroll-animate" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4vz4PCuQXG7b?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            
+                <div class = "playlist-spacer">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5mxcBEJo6EavuwkdxIt7Y5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Album Popup -->
+             <div class="album-popup" id="albumPopup">
+                <div class="popup-content">
+                    <span class="close-popup" id="closeAlbumPopup">&times;</span>
+                    <h3>Listen On</h3>
+                    <a href="https://music.youtube.com/channel/UCf5MIIjpO1g6igv4WdUbdYg" target="_blank" class="popup-link youtube-music-link">
+                        <img src="images/optimized/youtube-icon.webp" alt="YouTube Music" loading="lazy" decoding="async">
+                       Youtube Music
+                    </a>
+                    
+                    <a href="https://open.spotify.com/artist/2u7CP5T30c8ctenzXgEV1W/discography/album" target="_blank" class="popup-link spotify-link">
+                        <img src="images/optimized/spotify-icon.webp" alt="Spotify" loading="lazy" decoding="async">
+                        Spotify
+                    </a>
+
+                    <a href="https://music.apple.com/us/artist/ph-1/1173422048" target="_blank" class="popup-link apple-music-link">
+                        <img src="images/optimized/apple-music-icon.webp" alt="Apple Music" loading="lazy" decoding="async">
+                        Apple Music
+                    </a>
+                </div>
+            </div>
+
+            <!-- Video Popup -->
+            <div class="video-popup" id="videoPopup">
+                <div class="popup-content">
+                    <span class="close-popup" id="closeVideoPopup">&times;</span>
+                    <h3>Listen On</h3>
+                    <a href="#" target="_blank" class="popup-link youtube-link">
+                        <img src="images/optimized/youtube-icon.webp" alt="YouTube" loading="lazy" decoding="async">
+                        YouTube
+                    </a>
+                    <a href="#" target="_blank" class="popup-link spotify-link">
+                        <img src="images/optimized/spotify-icon.webp" alt="Spotify" loading="lazy" decoding="async">
+                        Spotify
+                    </a>
+                </div>
+            </div>
+
+            <!-- Go Up Button -->
+            <button id="goUpBtn" title="Go to top">&uarr;</button>
+
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-icons">
+                        <a href="https://www.instagram.com/ph1boyyy/?hl=en" target="_blank"><img src="images/optimized/instagram-icon.webp" alt="Instagram Icon" class="iconstyle"/ loading="lazy" decoding="async"></a>
+                        <a href="https://youtube.com/@ph1official?si=WSlBcVjXDLRavZ1H" target="_blank"><img src="images/optimized/youtube-icon.webp" alt="YouTube Icon" class="iconstyle" / loading="lazy" decoding="async"></a>
+                        <a href="https://x.com/ph1boyyy?lang=en " target="_blank"><img src="images/optimized/x-icon.webp" alt="Twitter Icon" class="iconstyle"/ loading="lazy" decoding="async"></a>
+                        <a href="https://www.tiktok.com/@boyyyph1?lang=en" target="_blank"><img src="images/optimized/tiktok-icon.webp" alt="TikTok Icon" class="iconstyle"/ loading="lazy" decoding="async"></a>
+                        <a href="https://open.spotify.com/artist/2u7CP5T30c8ctenzXgEV1W" target="_blank"><img src="images/optimized/spotify-icon.webp" alt="Spotify Icon" class="iconstyle" / loading="lazy" decoding="async"></a>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="images/ph1-logo.svg" alt="logo" />
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-links">
+                        <a href="https://www.cjenm.com/en/privacy-policy/1-7/" target="_blank"><h1>Contact</h1></a>
+                        <a href="https://www.cjenm.com/en/privacy-policy/1-7/" target="_blank"><h1>Privacy Policy</h1></a>
+                        <a href="https://www.cjenm.com/en/legal-notice-and-disclaimer/" target="_blank"> <h1>Terms and Conditions</h1></a>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>COPYRIGHT © 2025 pH-1 / ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Hamburger Menu Toggle
+            const hamburger = document.querySelector('.hamburger-menu');
+            const mobileNav = document.querySelector('.mobile-nav');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('is-active');
+                mobileNav.classList.toggle('is-active');
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const albumCoverContainer = document.getElementById('albumCoverContainer');
+                const albumPopup = document.getElementById('albumPopup');
+                const albumPopupContent = albumPopup.querySelector('.popup-content');
+                const closeAlbumPopup = document.getElementById('closeAlbumPopup');
+                const albumCover2 = document.getElementById('albumCoverContainer2');
+                const albumCoverContainer3 = document.getElementById('albumCoverContainer3');
+
+
+        // Show popup when album cover is clicked
+        albumCoverContainer.addEventListener('click', function() {
+          showPopup();
+        });
+
+        // Close popup when X is clicked 
+         closeAlbumPopup.addEventListener('click', function(e) {
+            e.stopPropagation();
+            albumPopup.classList.add('closing');
+            albumPopupContent.classList.add('closing');
+            setTimeout(() => {
+                albumPopup.style.display = 'none';
+            }, 300);
+        });
+
+        // Close popup when clicking outside the popup content
+        albumPopup.addEventListener('click', function(e) {
+            if (e.target === albumPopup) {
+                albumPopup.classList.add('closing');
+                albumPopupContent.classList.add('closing');
+                setTimeout(() => {
+                    albumPopup.style.display = 'none';
+                }, 300);
+            }
+        });
+
+        // Show popup when album cover is clicked
+        albumCover2.addEventListener('click', function() {
+           showPopup();
+        });
+
+        albumCoverContainer3.addEventListener('click', function() {
+          showPopup();
+        });
+
+        function showPopup() {
+            albumPopup.style.display = 'flex';
+            albumPopup.classList.remove('closing');
+            albumPopupContent.classList.remove('closing');
+        }
+
+        // Video Popup Logic
+        const videoPopup = document.getElementById('videoPopup');
+        const videoPopupContent = videoPopup.querySelector('.popup-content');
+        const closeVideoPopup = document.getElementById('closeVideoPopup');
+        const youtubeLink = videoPopup.querySelector('.youtube-link');
+        const spotifyLink = videoPopup.querySelector('.spotify-link');
+
+        document.querySelectorAll('.video-container').forEach(container => {
+            container.addEventListener('click', function() {
+                youtubeLink.href = this.dataset.youtube;
+                spotifyLink.href = this.dataset.spotify;
+                videoPopup.style.display = 'flex';
+                videoPopup.classList.remove('closing');
+                videoPopupContent.classList.remove('closing');
+            });
+        });
+
+        closeVideoPopup.addEventListener('click', function(e) {
+            e.stopPropagation();
+            videoPopup.classList.add('closing');
+            videoPopupContent.classList.add('closing');
+            setTimeout(() => {
+                videoPopup.style.display = 'none';
+            }, 300);
+        });
+
+        videoPopup.addEventListener('click', function(e) {
+            if (e.target === videoPopup) {
+                videoPopup.classList.add('closing');
+                videoPopupContent.classList.add('closing');
+                setTimeout(() => {
+                    videoPopup.style.display = 'none';
+                }, 300);
+            }
+        });
+
+        // Video Switcher Logic
+        const nextVideoBtn = document.getElementById('nextVideoBtn');
+        const videoContainers = document.querySelectorAll('.video-switcher .video-container');
+        let currentVideoIndex = 0;
+
+        nextVideoBtn.addEventListener('click', () => {
+            videoContainers[currentVideoIndex].querySelector('video').pause();
+            videoContainers[currentVideoIndex].classList.remove('is-active');
+            currentVideoIndex = (currentVideoIndex + 1) % videoContainers.length;
+            videoContainers[currentVideoIndex].classList.add('is-active');
+            const nextVideo = videoContainers[currentVideoIndex].querySelector('video');
+                const source = nextVideo.querySelector('source[data-src]');
+                if (source) {
+                    source.src = source.dataset.src;
+                    source.removeAttribute('data-src');
+                    nextVideo.load();
+                }
+                nextVideo.play().catch(() => {});
+        });
+
+        // Go Up Button
+        const goUpBtn = document.getElementById("goUpBtn");
+
+        window.onscroll = function() {
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercentage = (scrollPosition / totalHeight) * 100;
+
+            if (scrollPercentage >= 80) {
+                goUpBtn.classList.add("is-visible");
+            } else {
+                goUpBtn.classList.remove("is-visible");
+            }
+        };
+
+        goUpBtn.addEventListener('click', function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+
+        // Scroll animation
+        const animatedElements = document.querySelectorAll('.scroll-animate');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        animatedElements.forEach(el => observer.observe(el));
+    });
+        </script>
+    </body>
+</html>

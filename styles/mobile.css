@@ -1,0 +1,231 @@
+/* Mobile Styles (max-width: 600px) - One-Column Layout */
+
+/* --- Header & Hamburger Menu --- */
+header nav {
+    display: none; /* Hide desktop nav */
+}
+
+header a img {
+    height: 30px;
+    width: auto;
+}
+
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+    z-index: 1002;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #FF6600;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 1001;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#homepagefontsizeh2 {
+    font-size: 8vw;
+}
+
+/* --- Homepage --- */
+#homepagefontsizeh2 {
+    margin-bottom: -0.2rem;
+}
+
+.upcoming-tour-section {
+    flex-direction: column;
+}
+
+.tour-dates, .tour-image {
+    width: 100%;
+}
+
+.upcoming-tour-section .tour-dates {
+    margin-bottom: 2rem;
+}
+
+.ph1-type {
+    font-size: 35vw;
+    margin-top: -15vw;
+}
+
+.video-switcher {
+    height: auto;
+}
+
+.video-container {
+    position: relative;
+    height: auto;
+    display: none;
+}
+
+.video-container.is-active {
+    display: block;
+}
+
+.video-container video {
+    height: auto;
+    object-fit: contain;
+}
+
+/* --- Music Page --- */
+.album-layout {
+    flex-direction: column-reverse; 
+}
+
+.album-container, .album-cover-container {
+    width: 100%;
+}
+
+.digital-singles-gallery, .ep-gallery {
+    grid-template-columns: 1fr;
+}
+
+.music-text-header {
+    font-size: 20vw;
+    margin-bottom: -8vw;
+}
+
+.playlist-header {
+    font-size: 15vw; 
+    margin-bottom: 2rem;
+}
+
+.tour-dates-type-style {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+
+.tour-dates-body-style {
+    font-size: clamp(0.8rem, 2.5vw, 1rem); 
+}
+
+.tour-arrow-link {
+    font-size: clamp(2rem, 6vw, 2.5rem); 
+}
+
+.tour-date-entry {
+    flex-wrap: nowrap; 
+    gap: 1rem;
+}
+
+.get-tickets-btn {
+    flex-basis: 100%; 
+    text-align: center;
+}
+
+.tour-page-dates .tour-date-entry {
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+/* --- Tour Page --- */
+.tour-main-content {
+    flex-direction: column;
+}
+
+.tour-portrait-container {
+    flex-direction: column;
+}
+
+.tour-text-header {
+    font-size: 22vw;
+    margin-top: -18vw;
+}
+
+.past-tour-header {
+    font-size: 20vw;
+}
+
+/* --- About Page --- */
+.about-text-columns, .highlights-section {
+    flex-direction: column;
+}
+
+.about-text-columns p {
+    font-size: 0.9rem;
+}
+
+.highlights-section p {
+    font-size: 0.9rem;
+}
+
+.biography-text-header {
+    font-size: 12vw;
+    margin-top: 0vw;
+    margin-left: 8vw;
+}
+
+.mobile-nav.is-active {
+    display: flex;
+}
+
+.mobile-nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #FF6600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+/* --- Footer (1-Column Layout) --- */
+.footer-top, .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-links {
+    align-items: center;
+    text-align: center;
+}
+
+.footer-copyright {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* --- Contact Modal --- */
+.modal-content {
+    width: 90%; 
+    padding: 1.5rem; 
+    box-sizing: border-box;
+}
+
+/* --- Playlist --- */
+.playlist-container {
+    padding: 0 1rem; 
+    box-sizing: border-box;
+}

@@ -1,0 +1,110 @@
+/* Tablet Styles (601px - 999px) - Two-Column Layout */
+
+/* --- Header --- */
+header nav {
+    gap: 3rem; 
+}
+
+header nav a {
+    letter-spacing: 0.2rem; 
+}
+
+
+/* --- Homepage --- */
+.upcoming-tour-section {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.tour-dates, .tour-image {
+    width: 100%;
+    max-width: 700px; 
+}
+
+
+/* --- Music Page --- */
+.album-layout {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 2rem; 
+    gap: 2rem;
+}
+
+.album-container, .album-cover-container {
+    width: 100%;
+    max-width: 600px; 
+}
+
+.digital-singles-gallery {
+    padding: 0 2rem; 
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ep-gallery {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* --- Playlist --- */
+iframe {
+    margin: 0 2rem;
+    width: calc(100% - 4rem);
+}
+
+/* --- Tour Page --- */
+.tour-main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.tour-text-header {
+    font-size: 20vw;
+    margin-top: -12vw;
+    margin-bottom: 3vw;
+}
+
+.tour-portrait-container {
+    flex: 0 0 40%;
+}
+
+.tour-dates {
+    flex: 1;
+}
+
+.tour-dates-type-style {
+    font-size: 2rem; 
+}
+
+/* --- About Page --- */
+.about-text-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.about-text-columns p {
+    font-size: 1rem;
+}
+
+.highlights-section p {
+    font-size: 0.9rem;
+}
+
+
+.highlights-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tour-date-entry {
+    flex-wrap: wrap;
+}
+
+.get-tickets-btn {
+    margin-left: 0;
+    flex-basis: 100%;
+    text-align: center;
+}
